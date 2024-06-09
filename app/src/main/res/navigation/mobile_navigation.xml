@@ -22,4 +22,9 @@
         android:name="com.example.deadwoodassambly.ui.profile.ProfileFragment"
         android:label="@string/profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/navigation_adder"
+        android:name="com.example.deadwoodassambly.ui.adder.AdderFragment"
+        android:label="@string/navadder"
+        tools:layout="@layout/fragment_adder" />
 </navigation>

@@ -14,4 +14,11 @@
     <string name="assembly">Cбор</string>
     <string name="map">Карта</string>\
     <string name="profile">Профиль</string>
+    <string name="comment">Comment</string>
+    <string name="coorinates">Coorinates</string>
+    <string name="add_a_photo">Add a photo</string>
+    <string name="commenta">Comment</string>
+    <string name="addAPhoto">Add a photo</string>
+    <string name="save">Save</string>
+    <string name="navadder">Добавить</string>
 </resources>

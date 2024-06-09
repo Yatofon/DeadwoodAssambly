@@ -1,4 +1,4 @@
-package com.example.deadwoodassambly.ui.assembly;
+package com.example.deadwoodassambly.ui.profile;
 
 import android.app.Application;
 
@@ -9,8 +9,8 @@ import androidx.lifecycle.ViewModel;
 import java.io.Closeable;
 
 
-public class AssemblyViewModel extends AndroidViewModel {
-    public AssemblyViewModel(@NonNull Application application) {
+public class ProfileViewModel extends AndroidViewModel {
+    public ProfileViewModel(@NonNull Application application) {
         super(application);
     }
 }

@@ -1,4 +1,4 @@
-package com.example.deadwoodassambly.ui.profile;
+package com.example.deadwoodassambly.ui.adder;
 
 import android.os.Bundle;
 
@@ -10,16 +10,22 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.deadwoodassambly.R;
+import com.example.deadwoodassambly.databinding.FragmentAdderBinding;
 import com.example.deadwoodassambly.databinding.FragmentAssemblyBinding;
-import com.example.deadwoodassambly.databinding.FragmentProfileBinding;
 import com.example.deadwoodassambly.ui.assembly.AssemblyViewModel;
 
 
-public class ProfileFragment extends Fragment {
-    private FragmentProfileBinding binding;
+public class AdderFragment extends Fragment {
+    private FragmentAdderBinding binding;
 
+    private AdderViewModel adderViewModel;
 
-    private ProfileViewModel profileViewModel;
+    public static AdderFragment newInstance(String param1, String param2) {
+        AdderFragment fragment = new AdderFragment();
+        Bundle args = new Bundle();
+        fragment.setArguments(args);
+        return fragment;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -30,9 +36,9 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        profileViewModel =
-                new ViewModelProvider(this).get(ProfileViewModel.class);
-        binding = FragmentProfileBinding.inflate(inflater, container, false);
+        adderViewModel =
+                new ViewModelProvider(this).get(AdderViewModel.class);
+        binding = FragmentAdderBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         return root;

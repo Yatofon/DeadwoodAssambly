@@ -1,4 +1,4 @@
-package com.example.deadwoodassambly.ui.assembly;
+package com.example.deadwoodassambly.ui.map;
 
 import android.app.Application;
 
@@ -8,9 +8,9 @@ import androidx.lifecycle.ViewModel;
 
 import java.io.Closeable;
 
+public class MapsViewModel extends AndroidViewModel {
 
-public class AssemblyViewModel extends AndroidViewModel {
-    public AssemblyViewModel(@NonNull Application application) {
+    public MapsViewModel(@NonNull Application application) {
         super(application);
     }
 }

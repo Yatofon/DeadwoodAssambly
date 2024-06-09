@@ -6,9 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".ui.assembly.AssemblyFragment">
 
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_assembly"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/btn_dialog"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="20dp"
+        android:text="" />
 
 
 </FrameLayout>
