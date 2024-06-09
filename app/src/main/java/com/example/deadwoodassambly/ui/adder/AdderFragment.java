@@ -60,6 +60,7 @@ public class AdderFragment extends Fragment {
                         binding.lantitudeTextView.setText(Double.toString(addresses.get(0).getLongitude()));
 
 
+
                     }
                     catch (IOException e)
                     {
