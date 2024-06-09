@@ -1,7 +1,10 @@
 package com.example.deadwoodassambly.ui.assembly;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -15,6 +18,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.Manifest;
 import com.example.deadwoodassambly.R;
 import com.example.deadwoodassambly.databinding.FragmentAssemblyBinding;
 
@@ -35,6 +39,8 @@ public class AssemblyFragment extends Fragment {
         binding.floatingActionButton.setOnClickListener(v -> navController.navigate(R.id.navigation_adder));
         return root;
     }
+
+
 
     @Override
     public void onDestroyView() {

@@ -11,7 +11,7 @@
     tools:context=".ui.adder.AdderFragment">
 
     <TextView
-        android:text="Place"
+        android:text="@string/place"
         android:id="@+id/placeTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,27 +23,35 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:text="Coordinates"
-        android:id="@+id/coorTextView"
+        android:id="@+id/lantitudeTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/longitudeTextView"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placeTextView" />
+
+    <TextView
+        android:id="@+id/longitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/placeTextView" />
 
     <DatePicker
         android:id="@+id/datePeaker"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="400dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/coorTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/longitudeTextView" />
 
     <MultiAutoCompleteTextView
         android:id="@+id/commentMultiAutoCompleteTextView"

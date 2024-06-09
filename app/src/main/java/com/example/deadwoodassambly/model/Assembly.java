@@ -5,8 +5,8 @@ import java.util.Date;
 public class Assembly
 {
     private String place;
-    private float latitude;
-    private float longitude;
+    private double latitude;
+    private double longitude;
     private Date date;
     private String comment;
     private String image;
@@ -15,11 +15,11 @@ public class Assembly
         return place;
     }
 
-    public float getLatitude() {
+    public double getLatitude() {
         return latitude;
     }
 
-    public float getLongitude() {
+    public double getLongitude() {
         return longitude;
     }
 
@@ -39,11 +39,11 @@ public class Assembly
         this.place = place;
     }
 
-    public void setLatitude(float latitude) {
+    public void setLatitude(double latitude) {
         this.latitude = latitude;
     }
 
-    public void setLongitude(float longitude) {
+    public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
 
@@ -59,7 +59,7 @@ public class Assembly
         this.image = image;
     }
 
-    public Assembly(String place, float latitude, float longitude, Date date, String comment, String image) {
+    public Assembly(String place, double latitude, double longitude, Date date, String comment, String image) {
         this.place = place;
         this.latitude = latitude;
         this.longitude = longitude;
