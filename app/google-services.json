@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "507150151233",
+    "firebase_url": "https://deadwood-assembly-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "deadwood-assembly",
+    "storage_bucket": "deadwood-assembly.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507150151233:android:9917e9e2a47fdfba4ba0c0",
+        "android_client_info": {
+          "package_name": "com.example.deadwoodassambly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507150151233-gsv733tqvsbn3n3qht2gp1t8nqofo31k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxb-0xpIwSssFGh_fCvf-WMO2nb7TxAzc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507150151233-gsv733tqvsbn3n3qht2gp1t8nqofo31k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
