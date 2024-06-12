@@ -8,11 +8,13 @@ import androidx.navigation.Navigation;
 
 import com.example.deadwoodassambly.R;
 import com.example.deadwoodassambly.databinding.ActivityMainBinding;
+import com.example.deadwoodassambly.ui.assembly.AssemblyAdapter;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
