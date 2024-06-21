@@ -1,16 +1,27 @@
 package com.example.deadwoodassambly.ui.profile;
 
-import android.app.Application;
-
-import androidx.annotation.NonNull;
-import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
-import java.io.Closeable;
+public class ProfileViewModel extends ViewModel {
 
+    private FirebaseAuth firebaseAuth;
+    private MutableLiveData<String> userEmailLiveData;
 
-public class ProfileViewModel extends AndroidViewModel {
-    public ProfileViewModel(@NonNull Application application) {
-        super(application);
+    public ProfileViewModel() {
+        firebaseAuth = FirebaseAuth.getInstance();
+        userEmailLiveData = new MutableLiveData<>();
+
+        FirebaseUser currentUser = firebaseAuth.getCurrentUser();
+        if (currentUser != null) {
+            userEmailLiveData.setValue(currentUser.getEmail());
+        }
+    }
+
+    public LiveData<String> getUserEmailLiveData() {
+        return userEmailLiveData;
     }
 }

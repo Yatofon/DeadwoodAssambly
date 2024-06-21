@@ -2,6 +2,7 @@ package com.example.deadwoodassambly.ui;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.NavGraph;
 import androidx.navigation.Navigation;
@@ -9,6 +10,7 @@ import androidx.navigation.Navigation;
 import com.example.deadwoodassambly.R;
 import com.example.deadwoodassambly.databinding.ActivityMainBinding;
 import com.example.deadwoodassambly.ui.assembly.AssemblyAdapter;
+import com.example.deadwoodassambly.ui.map.MapsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.navigation.fragment.NavHostFragment;

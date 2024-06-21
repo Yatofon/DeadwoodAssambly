@@ -29,8 +29,8 @@
              "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
         -->
         <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
+            android:name="com.yandex.maps.apikey"
+            android:value="35547aea-62bc-4084-bd67-fb75df9e37a3" />
 
         <activity
             android:name=".ui.loginregister.LoginRegisterActivity"

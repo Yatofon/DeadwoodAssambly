@@ -11,7 +11,6 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="namesurnamecom76@gmail.com"
         android:hint="Email" />
 
     <EditText
@@ -20,7 +19,6 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="ITSchoolSamsung"
         android:hint="Password" />
 
     <Button
